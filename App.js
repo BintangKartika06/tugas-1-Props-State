@@ -17,6 +17,23 @@ const App = () => {
   };
 
   return (
-    
-  )
-}
+    <View style={Styles.container}>
+      <Text style={styles.header} Cafe Kucing></Text>
+      <Text style={styles.subHeader}>Pilih Menu Favoritmu</Text>
+
+      <OrderSummary totalCount={totalPesanan}/>
+
+      <ScrollView>'
+        {DAFTER_MENU.map((menu) => (
+          <MenuItem
+          key={menu.id}
+          nama={menu.nama}
+          harga={menu.harga}
+          onTambahPesanan={handleTambahPesanan}
+          />
+        ))}
+      </ScrollView>
+    </View>
+  );
+};
+
