@@ -11,3 +11,9 @@ const OrderSummary = ({totalCount}) => {
         </View>
     );
 };
+
+const styles = StyleSheet.create({
+    box: { backgroundColor: '#fff7ed', padding: 16, borderRadius: 12, marginBottom: 16 },
+  total: { fontSize: 18, fontWeight: 'bold', color: '#7c2d12' },
+  promo: { marginTop: 8, fontSize: 15, color: '#15803d', fontWeight: 'bold' }
+});
