@@ -1,4 +1,4 @@
-import react from 'react';
+import React, { useState } from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 
 const MenuItem = ({ nama, harga, onTambahPesanan }) => {
@@ -19,4 +19,25 @@ const MenuItem = ({ nama, harga, onTambahPesanan }) => {
       </TouchableOpacity>
     </View>
   );
-}
+};
+
+const styles = StyleSheet.create({
+  card: {
+    flexDirection: 'row',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: '#fff',
+    padding: 16,
+    borderRadius: 12,
+    marginBottom: 12,
+    borderWidth: 1,
+    borderColor: '#e5e7eb',
+  },
+  nama: { fontSize: 16, fontWeight: 'bold', color: '#1f2937' },
+  harga: { fontSize: 14, color: '#6b7280', marginTop: 2 },
+  qty: { fontSize: 13, color: '#9a3412', marginTop: 4 },
+  button: { backgroundColor: '#ea580c', paddingVertical: 10, paddingHorizontal: 14, borderRadius: 8 },
+  buttonText: { color: '#fff', fontWeight: 'bold' },
+});
+
+export default MenuItem;
