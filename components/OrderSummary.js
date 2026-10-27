@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet } from 'React Native';
+import { View, Text, StyleSheet } from 'react-native';
 
 const OrderSummary = ({totalCount}) => {
     return (
@@ -17,3 +17,5 @@ const styles = StyleSheet.create({
   total: { fontSize: 18, fontWeight: 'bold', color: '#7c2d12' },
   promo: { marginTop: 8, fontSize: 15, color: '#15803d', fontWeight: 'bold' }
 });
+
+export default OrderSummary;
