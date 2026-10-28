@@ -35,9 +35,9 @@ const styles = StyleSheet.create({
   },
   nama: { fontSize: 16, fontWeight: 'bold', color: '#1f2937' },
   harga: { fontSize: 14, color: '#6b7280', marginTop: 2 },
-  qty: { fontSize: 13, color: '#9a3412', marginTop: 4 },
-  button: { backgroundColor: '#ea580c', paddingVertical: 10, paddingHorizontal: 14, borderRadius: 8 },
-  buttonText: { color: '#fff', fontWeight: 'bold' },
+  qty: { fontSize: 13, color: '#bd0101', marginTop: 4 },
+  button: { backgroundColor: '#81dcec', paddingVertical: 10, paddingHorizontal: 14, borderRadius: 8 },
+  buttonText: { color: '#0f0f0f', fontWeight: 'bold' },
 });
 
 export default MenuItem;

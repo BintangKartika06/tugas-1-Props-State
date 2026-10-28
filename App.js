@@ -18,8 +18,8 @@ const App = () => {
 
   return (
     <View style={styles.container}>
-      <Text style={styles.header}>Kafe Djaya</Text>
-      <Text style={styles.subHeader}>Pilih menu favoritmu</Text>
+      <Text style={styles.header}>Kafe Kucing!</Text>
+      <Text style={styles.subHeader}>Pilih menu favorit kamu</Text>
 
       <OrderSummary totalCount={totalPesanan} />
 
@@ -38,9 +38,9 @@ const App = () => {
 };
 
 const styles = StyleSheet.create({
-  container: { flex: 1, backgroundColor: '#fffbf5', padding: 20, paddingTop: 60 },
-  header: { fontSize: 26, fontWeight: 'bold', color: '#7c2d12' },
-  subHeader: { fontSize: 14, color: '#6b7280', marginBottom: 16 },
+  container: { flex: 1, backgroundColor: '#fde4bd', padding: 20, paddingTop: 60 },
+  header: { fontSize: 26, fontWeight: 'bold', color: '#7c2d12', textAlign: 'center' },
+  subHeader: { fontSize: 14, color: '#6b7280', marginBottom: 16, textAlign: 'center' },
 });
 
 export default App;
